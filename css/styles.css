@@ -1,0 +1,33 @@
+body{
+	background-color: #87a19f;
+}
+div { 
+	border: 1px solid;
+}
+
+#logo img {
+	float: left;
+	width:  15%;
+	height: 20%;
+}
+
+header{
+	float: left;
+}
+
+nav {
+	float: left;
+}
+
+main {
+	clear: left;
+}
+#dogimage img{
+	width: 550px;
+	height: 550px;
+}
+
+#familypicture img {
+	width: 800px;
+	height: 800px;
+}
