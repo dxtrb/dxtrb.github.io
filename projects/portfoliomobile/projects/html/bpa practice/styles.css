@@ -1,0 +1,85 @@
+/* General Page Specifications */
+body {
+    background-color: #FFC0CB; /* Soft pink */
+    color: #333333;           /* Dark gray */
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/* Wrapper Styles */
+#wrapper {
+    width: 1000px;
+    background-color: #FFF;  /* White */
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* Heading Styles & Header */
+h1 {
+    font-family: "Verdana", sans-serif;
+    font-size: 24pt;
+    color: #FF69B4;          /* Bright pink */
+    font-weight: normal;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+h2 {
+    font-family: "Arial", sans-serif;
+    font-size: 14pt;
+    color: #FF1493;          /* Deep pink */
+    font-weight: normal;
+    text-align: center;
+    margin: 5px 0 15px 0;
+}
+
+/* Horizontal Rule */
+hr {
+    height: 12px;
+    background-color: #FF69B4;
+    border: none;
+    margin: 10px 0;
+}
+
+/* Image Layout Specifications */
+#cp1 {
+    width: 210px;
+    height: 210px;
+    float: left;
+    margin: 0 0 0 15px;
+}
+
+#cp2 {
+    width: 210px;
+    height: 210px;
+    float: right;
+    margin: 0 0 0 15px;
+}
+
+/* Service Sections Alignment & Lists */
+.services h2 {
+    text-align: center;
+}
+
+.green-text {
+    color: #009000;
+}
+
+.min-order-list {
+    margin-left: 350px;
+}
+
+/* Clearfix for Floated Images */
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer Link Alignment */
+footer {
+    text-align: left;
+    margin-top: 20px;
+}

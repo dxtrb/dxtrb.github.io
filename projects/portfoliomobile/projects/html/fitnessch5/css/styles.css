@@ -1,0 +1,167 @@
+/*
+Author: Dexter B 
+Date: 9/14/2026
+File Name: styles.css 
+*/
+/* Css Reset */
+body, header, nav, footer, main, div, h1, ul{
+margin: 0;
+padding: 0;
+border: 0
+}
+/* CSS for body and images */
+body{
+	background-color: #000;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+/* style rules for mobile viewport */
+
+/* CSS for header */
+header{
+	position: sticky;
+	top: 0;
+	background-color: #000;
+	height: 190px;
+}
+
+
+header img{
+	margin: 0 auto;
+}
+/* CSS for navigation area */
+nav{
+	padding: 1%;
+	margin-bottom: 1%;
+}
+
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li{
+	font-size: 1.5em;
+	border-top: 1px solid #fff;
+	font-family: "Francois One", sans-serif;
+}
+nav li:first-child{
+	border-top: none;
+}
+
+
+
+nav li a{
+	display: block;
+	color: #fff;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+
+/* Show mobile class.  hide tablet-desktop */
+.mobile{
+	display: block;
+}
+
+.tablet-desktop{
+	display: none; 
+}
+
+
+/* CSS for main content*/
+main{
+	clear: left;
+	background-color: #fff;
+	padding: 2%;
+	font-size: 1.25em;
+	font-family: "Roboto Slab", serif;
+}
+
+
+.tel-link{
+	background-color: #404040;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+
+
+.tel-link a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+.hours{
+	margin-left: 10%
+}
+
+.action{
+	font-size: 1.35em;
+	color: 660;
+	font-weight: bold;
+}
+
+#weights, #cardio, #training{
+	margin: 0 2%;
+}
+
+.round{
+	border-radius: 8px;
+
+}
+
+#exercises{
+	clear: left;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #f2f2f2;
+	padding: 1% 2%;
+}
+
+#exercises dt{
+	font-weight: bold;
+}
+
+#exercises dd{
+padding: .5% 1% 2% 0;
+}
+.external-link{
+	color: #660;
+	font-weight: bold;
+	text-decoration: none;
+}
+#contact{
+	text-align: center;
+}
+
+#contact a{
+	color: #660;
+	text-decoration: none;
+}
+
+.map{
+	border: 2px solid #000;
+	width: 95%;
+	height: 50%;      
+}
+
+footer p{
+	font-size: .75em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1em;
+}
+/* CSS for footer */
+footer p a{
+	color: #fff;
+	
+}
