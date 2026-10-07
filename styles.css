@@ -1,0 +1,91 @@
+/* DESKTOP STYLES */
+body {
+	background-color: #87a19f;
+}
+
+div { 
+	border: 1px solid;
+}
+
+#logo img {
+	float: left;
+	width: 15%;
+	height: 20%;
+}
+
+header {
+	float: left;
+}
+
+nav {
+	float: left;
+}
+
+main {
+	clear: left;
+}
+
+#dogimage img {
+	width: 550px;
+	height: 550px;
+}
+
+#familypicture img {
+	width: 800px;
+	height: 800px;
+}
+
+.mobile {
+	display: none;
+}
+
+.tablet-desktop {
+	display: block;
+}
+
+
+/* TABLET STYLES */
+@media screen and (max-width: 1024px) {
+	#dogimage img, 
+	#familypicture img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	iframe {
+		max-width: 100%;
+	}
+}
+
+
+/* MOBILE STYLES */
+@media screen and (max-width: 768px) {
+	header, nav, main {
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+
+	#logo img {
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+
+	#dogimage img, 
+	#familypicture img, 
+	img, 
+	iframe {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.tablet-desktop {
+		display: none;
+	}
+}
