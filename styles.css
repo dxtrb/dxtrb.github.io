@@ -1,10 +1,26 @@
 /* DESKTOP STYLES */
 body {
 	background-color: #87a19f;
+	background-image: linear-gradient(to bottom, #87a19f, #5b7371);
 }
 
 div { 
 	border: 1px solid;
+}
+
+.about-section {
+	float: left;
+	width: 30%;
+	margin-right: 2%;
+	margin-bottom: 15px;
+	min-height: 250px;
+}
+
+#logo {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	clear: both;
 }
 
 #logo img {
@@ -13,21 +29,40 @@ div {
 	height: 20%;
 }
 
+#contact {
+	float: left;
+	margin-right: 15px;
+}
+
 header {
 	float: left;
+	width: 100%;
 }
 
 nav {
 	float: left;
+	width: 100%;
 }
 
 main {
-	clear: left;
+	clear: both;
+}
+
+#dogimage {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
 }
 
 #dogimage img {
 	width: 550px;
 	height: 550px;
+}
+
+#familypicture {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
 }
 
 #familypicture img {
@@ -43,9 +78,37 @@ main {
 	display: block;
 }
 
+/* Pseudo-classes */
+nav a:hover {
+	color: #ffffff;
+	background-color: #5b7371;
+	border-radius: 4px;
+	text-decoration: none;
+	padding: 2px 4px;
+	transition: background-color 0.3s ease;
+}
+
+main a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+div:hover {
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 /* TABLET STYLES */
 @media screen and (max-width: 1024px) {
+	body {
+		background-image: linear-gradient(to bottom, #87a19f, #6c8886);
+	}
+
+	.about-section {
+		width: 45%;
+		margin-right: 3%;
+	}
+
 	#dogimage img, 
 	#familypicture img {
 		max-width: 100%;
@@ -55,15 +118,36 @@ main {
 	iframe {
 		max-width: 100%;
 	}
+
+	#logo, #contact, #dogimage, #familypicture {
+		float: left;
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
 }
 
 
 /* MOBILE STYLES */
 @media screen and (max-width: 768px) {
-	header, nav, main {
+	body {
+		font-family: 'Open Sans', sans-serif;
+		background-image: none;
+	}
+
+	div, main, nav, header {
+		border-radius: 12px;
+		padding: 10px;
+	}
+
+	img {
+		border-radius: 8px;
+	}
+
+	header, nav, main, #logo, #contact, #dogimage, #familypicture, .about-section {
 		float: none;
 		clear: both;
 		width: 100%;
+		margin-right: 0;
 	}
 
 	#logo img {
