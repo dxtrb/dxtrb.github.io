@@ -11,15 +11,15 @@
 **/
 // declare global constants
 const EMP_COST = 100; // cost per hour
-const BOOK_COST = 350; 
+const BOOK_COST = 350;
 const REPRO_COST = 1250;
 const TRAVEL_COST = 2; // cost per mile
 
 
-window.addEventListener("load", setupForm); 
+window.addEventListener("load", setupForm);
 
- 
-      /** set the form  default values */
+
+/** set the form default values */
 function setupForm(){
       document.getElementById("photoNum").value = 1;
       document.getElementById("photoHrs").value = 2;
@@ -29,7 +29,7 @@ function setupForm(){
 
       getEstimate();
 
-      //add event handler to each input control
+      // add event handler to each input control
       document.getElementById("photoNum").onchange = getEstimate;
       document.getElementById("photoHrs").onchange = getEstimate;
       document.getElementById("photoDist").onchange = getEstimate;
@@ -38,20 +38,19 @@ function setupForm(){
 }
 
 
-//estimate the total cost
+// estimate the total cost
 function getEstimate(){
       let totalCost = 0;
-      let photographers = document.getElementById("ptotoNum").value;
+      let photographers = document.getElementById("photoNum").value;
       let hours = document.getElementById("photoHrs").value;
       let distance = document.getElementById("photoDist").value;
       let buyBook = document.getElementById("makeBook").checked;
       let buyRights = document.getElementById("photoRights").checked;
-      
+
       totalCost += photographers * EMP_COST * hours;
       totalCost += distance * TRAVEL_COST * photographers;
       totalCost += buyBook ? BOOK_COST : 0;
-      totalCost += buyRights ? REPRO+COST : 0;
+      totalCost += buyRights ? REPRO_COST : 0;
 
       document.getElementById("estimate").innerHTML = "$" + totalCost;
-
 }
