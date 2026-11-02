@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- this webpage template was created by dexter --> 
+<html lang="en">
+<head>
+    <title>Forward Fitness Club</title>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" 
+			href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180"
+			href="images/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+        <!-- use header area for website name or logo --> 
+        <header>
+            <h1><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club Logo"></h1>
+        </header>
+
+        <!-- Use nav area to add hyperlinks to other pages -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Use main area to add main content to webpage -->
+        <main>
+            <div id="contact">
+                <h2>Ready to get started? Contact us today.</h2>
+                <h4 class="mobile tel-link"><a href="tel:8145559608">(814) 555 9608</a></h4>
+                <h4 class="tablet-desktop tel-num">(814) 555 9608</a></h4>
+                <h3>Email us: <a href="mailto:forwardfitness@club.net" class="contact-email-link">forwardfitness@club.net</a></h3>
+                <h3>Visit us at: 1275 Channel Center Street, Boston, MA 02210</h3>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5897.61833409263!2d-71.06724095277944!3d42.346591814300275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a7daedd60b5%3A0xd2256bd92e3d4f3b!2sChannel%20Center%20Building!5e0!3m2!1sen!2sus!4v1788545121577!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="map"></iframe>
+            </div>
+        
+        
+      
+            <div id="form">
+                <h2>Complete the form below to begin your free trial.</h2>
+                <form class="form-grid">
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" id="fName" name="fName" required>
+                        <label for="lName">Last Name:</label>
+                        <input type="text" id="lName" name="lName" required>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone: </label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <p>I would like more information about:</p>
+                        <label for="grpfit">
+                            <input type="checkbox" id="grpfit" name="interest" value="Group Fitness">
+                            Group Fitness
+                        </label>
+                        <label for="prtrain">
+                            <input type="checkbox" id="prtrain" name="interest" value="Personal Training">
+                            Personal Training
+                        </label>
+                        <label for="nutr">
+                            <input type="checkbox" id="nutr" name="interest" value="Nutrition">
+                            Nutrition
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Referral Source</legend>
+                        <label>How did you find us?</label>
+                        <select id="reference" name="reference">
+                            <option value="ad"></option>Advertisement</option>
+                            <option value="friend">Friend</option>
+                            <option value="google">Google</option>
+                            <option value="social">Social Media</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="questions">Questions?</label>
+                        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                    </fieldset>
+                    <input type="submit" id="submit" value="Submit" class="btn">
+                </form>
+            </div>
+        </main>
+        
+
+
+        <!-- Use footer area to add footer content -->
+        <footer>
+            <p>&copy; Copyright 2026. All Rights Reserved.</p>
+            <p><a href="mailto:info@forwardfitnessclub.net">forwardfitnessclub.net</a></p>
+        </footer>
+    </div>
+</body>
+</html>
